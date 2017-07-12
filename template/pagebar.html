@@ -1,0 +1,11 @@
+<div class="page">
+	<div class="cell startPage" ng-if="startPageFlag" ng-click="clickevt(startPage)">{{startPage}}</div>
+	<div class="prev" ng-if="prevFlag">…</div>
+	<div class="cell" 
+		ng-class="{true:'active'}[currentPage == page]" 
+		ng-repeat="page in PageNumArray" 
+		ng-click="clickevt(page)" 
+		ng-model="page">{{page}}</div>
+	<div class="next" ng-if="nextFlag">…</div>
+	<div class="cell endPage" ng-if="endPageFlag" ng-click="clickevt(endPage)">{{endPage}}</div>
+</div>

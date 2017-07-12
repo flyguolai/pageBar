@@ -1,0 +1,45 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.pagebar{
+    height: 30px;
+}
+
+.page{
+    height: 30px;
+}
+
+.page .cell{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black ;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: lightyellow;
+    user-select: none;
+}
+
+.page .cell.active,.page .cell.active:hover{
+    background-color:black;
+    border: 1px solid gold;
+    border-radius: 2px;
+    color: white;
+}
+
+.page .cell:hover{
+    background-color: lightgray;
+}
+
+.prev{
+    display: inline-block;
+}
+
+.next{
+    display: inline-block;
+}
